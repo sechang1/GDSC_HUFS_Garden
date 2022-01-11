@@ -116,3 +116,54 @@ public class HelloStdIO {
 		System.out.println("에러는 없습니다.");
 	}
 }*/
+
+// 메소드 printf의 다양한 형식 지정자
+
+/*import java.io.*;
+
+public class Main{
+	public static void main(String[] args){
+		int age = 27;
+		int weight = 70;
+		double height = 175.8;
+		
+		System.out.printf("나이: %d, 몸무게: %d, 키: %f, ", age, weight, height);
+		System.out.printf("%s: %c 형", "혈액형", 'O');
+		
+		//질문: 위에 int, double 선언한거 교수님이 하신 것 처럼 굳이 byte, int, dounle로 다 나눠서 해야함? byte도 int로 그냥 선언하면 안되는 건가?
+	}
+}*/
+
+// 메소드 printf와 format의 사용
+
+/*import java.io.*;
+
+public class Main{
+	public static void main(String[] args){
+		System.out.println("123456 123456 123456");
+		System.out.println("--------------------");
+		System.out.format("%6d %6o %6h %n", 10, 10, 10);
+		System.out.format("%-6d %-6o %-6x %n", 20, 20, 20);
+		System.out.format("%+6d %6o %6H %n", 30, 30, 30);
+		System.out.format("%1$6d %1$6o %1$6h %n", 128);
+		System.out.printf("%1$6.2f %1$6.3f %1$6.4f %n", 3.141592);
+	}
+}*/
+
+// import 문장의 사용
+
+/*import java.util.*;
+
+public class Main{
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("십진수와 이진수를 각각 입력하세요.");
+		int num1 = input.nextInt();
+		int num2 = input.nextInt(2);
+		
+		System.out.printf("num1 = " + num1 + ", num2 = " + num2);
+		System.out.printf("\nnum1 = %d, num2 = %d", num1, num2);
+	}
+}*/
+
