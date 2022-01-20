@@ -133,3 +133,173 @@ public class Main {
       System.out.println(data.length);
    }
 }*/
+
+
+// 배열의 선언과 생성 그리고 배열 원소 참조
+/*import java.io.*;
+
+public class Main {
+   public static void main(String[] args) {
+      double[] points = new double[3];
+      
+      points[0] = 28;
+      points[1] = 29;
+      points[2] = 30;
+      
+      System.out.println(points.length);
+      System.out.println(points[0]);
+      System.out.println(points[1]);
+      System.out.println(points[2]);
+   }
+}*/
+
+
+//배열 초기화 활용
+/*import java.io.*;
+
+public class Main {
+   public static void main(String[] args) {
+		 
+      double dScore[] = {2.78, 4.28, 3.18};
+      String sbjt[] = {"국어", "영어", "수학"};
+      
+      System.out.println(sbjt[0] + ": " + dScore[0]);
+      System.out.println(sbjt[1] + ": " + dScore[1]);
+      System.out.println(sbjt[2] + ": " + dScore[2]);
+   }
+}*/
+
+
+//배열 선언 이후 배열 초기화 활용
+/*import java.io.*;
+
+public class Main {
+   public static void main(String[] args) {
+      
+		 int score[];
+      
+      score = new int[] {2,4,7};
+      System.out.printf("%d %d %d %n",score[0],score[1],score[2]);
+      score = new int[] {23,46,78};
+      System.out.printf("%d %d %d %n",score[0],score[1],score[2]);
+   }
+}*/
+
+
+//배열을 복사하는 System.arraycopy()
+/*import java.io.*;
+
+public class Main {
+   public static void main(String[] args) {
+		 
+		 int[] copyFrom = {1, 2, 3, 4, 5, 6, 7};
+		 int[] copyTo = {10, 20, 30, 40, 50, 60, 70, 80};
+		 
+		 for(int i = 0; i<copyFrom.length; i++)
+			 System.out.print(copyFrom[i] + " ");
+	 }
+}*/
+
+
+//이차원 배열 활용
+/*import java.io.*;
+
+public class Main {
+   public static void main(String[] args) {
+		 
+		 int mtrx[][];
+		 
+		 mtrx = new int[2][3];
+		 
+		 mtrx[0][0] = 3; mtrx[0][1] = 5; mtrx[0][2] = 0;
+     mtrx[1][0] = 7; mtrx[1][1] = 2; mtrx[1][2] = 8;
+		 
+		 for(int i = 0; i < mtrx.length; i++){
+			 for(int j = 0; j < mtrx[i].length; j++){
+				 System.out.printf(mtrx[i][j] + " ");
+			 }
+			System.out.println();
+		 }
+   }
+}*/
+
+
+//이차원배열의 초기화 활용 1
+
+//
+
+
+
+
+
+//이차원배열의 초기화 활용 2
+/*import java.io.*;
+
+public class Main {
+   public static void main(String[] args) {
+      String name[] = {"C++","Java","C#"};
+      
+      for(String str : name)
+         System.out.print(str + " ");
+      System.out.println();
+      
+      String data[][] = {{"홍","길동"},{"최","경","주"},{"Tiger","Woods"}};
+      
+      for(int i =0; i<data.length;i++){
+         for(int j=0;j<data[i].length;j++)
+            System.out.print(data[i][j]+" ");
+         System.out.println();
+      }
+   }
+}*/
+
+
+//배열 크기를 표준입력으로 처리
+/*import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      System.out.print("배열 크기 입력 > ");
+      int size = input.nextInt();
+      
+      int[] score = new int[size];
+		 
+		 System.out.print("성적 입력 > ");
+		 for (int i=0; i < score.length; i++)
+			 score[i] = input.nextInt();
+		 
+		 for (int value: score)
+			 System.out.print(value + " ");
+      
+   }
+}*/
+
+
+
+//여기는 객체지향과 클래스 부분(반복과 배열 부분이 아님)
+
+//클래스 CreditCard의 객체 생성과 사용
+/*import java.util.*;
+
+public class Main{
+	
+	private long number;
+	public String owner;
+	
+	public static void main(String[] args){
+		
+		Main myCard = new Main();
+		
+		myCard.number = 3456_7654_8765_5647L;
+		myCard.owner = "유 재석";
+		
+		System.out.print("카드 번호: " + myCard.number);
+		System.out.print(", 카드소유자: " + myCard.owner);
+		
+	}
+}*/
+
+
+//
