@@ -301,3 +301,171 @@ public class CreditCard {
       System.out.println("card3: " + card3.owner + " " + card3.getNumber());
    }
 }*/
+//클래스 Account의 객체 생성과 사용
+/*import java.io.*;
+
+public class Account {
+   public String owner;
+   public long balance;
+   
+   public Account(String owner) 
+	 {
+      this.owner = owner;
+   }
+   public Account(long balance) 
+	 {
+      this.balance = balance;
+   }
+   public Account(String owner, long balance) 
+	 {
+      this(owner);
+      this.owner = owner;
+      this.balance = balance;
+   }
+
+   public static void main(String[] args) {
+      Account act1 = new Account("최여진");
+      Account act2 = new Account(1000000);
+      act2.owner = "홍혜빈";
+      Account act3 = new Account("신세경", 200000);
+      
+      System.out.printf("act1: %s %d %n",act1.owner,act1.balance);
+      System.out.printf("act2: %s %d %n",act2.owner,act2.balance);
+      System.out.printf("act3: %s %d %n",act3.owner,act3.balance);
+      
+   }
+}*/
+
+
+//자동차를 표현한 클래스
+/*import java.io.*;
+
+public class Car {
+   private int maxSpeed;
+   public String brandName;
+   public int speed;
+
+   public Car(String brandName)
+	 {
+      this.brandName = brandName;
+   }
+   public Car(String brandName,int maxSpeed)
+	 {
+      this(brandName);
+      this.maxSpeed = maxSpeed;
+   }
+   public int speedUp()
+	 {
+      return speed += 30;
+   }
+   public int speedDown()
+	 {
+      return speed -= 20;
+   }
+   public int getMaxSpeed()
+	 {
+      return maxSpeed;
+   }
+   public void setMaxSpeed(int maxSpeed)
+	 {
+      this.maxSpeed = maxSpeed;
+   }
+   
+   
+   public static void main(String[] args) {
+      Car mycar = new Car("포르쉐", 300);
+      mycar.speedUp();
+      mycar.speedUp();
+      System.out.print("차종: " + mycar.brandName);
+      System.out.print(", 최고 속도: " + mycar.getMaxSpeed());
+      System.out.println(", 현재 속도: " + mycar.speedDown());
+   }
+}*/
+
+
+//클래스 Circle에서 PI를 정적으로 선언하여 사용
+/*import java.io.*;
+
+public class Circle {
+   public double radius;
+   public static final double PI = 3.141592;
+   
+   public Circle(double radius)
+	 {
+      this.radius = radius;
+   }
+   public double getArea()
+	 {
+      return radius * radius * PI;
+   }
+   public double getRound()
+	 {
+      return radius * 2 * PI;
+   }
+   public void print()
+	 {
+      System.out.printf("반지름이 %.2f인 원의 면적은 %.2f이고, 둘레 길이는 %.2f이다. %n",radius,getArea(),getRound());
+   }
+   
+
+   public static void main(String[] args) 
+	 {   
+      Circle c1 = new Circle(2.78);
+      c1.print();
+      
+      Circle c2 = new Circle(5.25);
+      c2.print();
+   }
+}*/
+
+
+//지역변수의 상수선언
+/*import java.io.*;
+public class Const {
+	public static void main(String[] args) {
+		final int maxSize = 5;
+		
+		int data[] = new int[maxSize];
+		System.out.println("배열 크기: " + data.length);
+		System.out.println("배열 크기: " + maxSize);
+	}
+}*/
+
+
+//클래스 Circle에서 면적과 원의 둘레 길이
+/*import java.io.*;
+
+public class Circle {
+   public double radius;
+   public static final double PI = 3.141592;
+
+   public Circle(double radius)
+	 {
+      this.radius = radius;
+   }
+   
+   public double getArea()
+	 {
+      return radius * radius * PI;
+   }
+   public double getRound()
+	 {
+      return radius * 2 * PI;
+   }
+
+   public void print()
+	 {
+      System.out.printf("반지름이 %.2f인 원의 면적은 %.2f이고, 둘레 길이는 %.2f이다. %n",radius,getArea(),getRound());
+   }
+   
+   public static void main(String[] args) {   
+      Circle c1 = new Circle(2.78);
+      c1.print();
+      
+      Circle c2 = new Circle(5.25);
+      c2.print();
+   }
+}*/
+
+
+//
