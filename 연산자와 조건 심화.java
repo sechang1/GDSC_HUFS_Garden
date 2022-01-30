@@ -68,8 +68,9 @@ public class Motor extends Vehicle {
 */
 
 //자동차를 위한 생성자의 구현과 객체의 생성
-/*import java.io.*;
-class Vehicle {
+
+import java.io.*;
+	class Vehicle {
 	public String name = "차량"; 	//이름
 	public double maxSpeed; 	//최대 속도
 	public int seater;			//정원
@@ -107,34 +108,39 @@ public class Motor extends Vehicle {
 		Motor myCar = new Motor(300, 4, 5000);
 		myCar.printInfo();
 	}
-}*/
+}
 
 
 //저축계좌를 표현한 클래스
 /*import java.io.*;
-class Account {
+class Account 
+{
 	public String name; 
 	protected Date open;
-	/*package*/ int number;
+	int number; //package
 	private long balance;
 	
-	protected Account(String name, int number){
+	protected Account(String name, int number)
+	{
 		this.name = name;
 		this.number = number;
 		this.open = new Date();
 	}
 	
-	/*일반 메소드*/
+	//일반 메소드
 	//입금 메소드
-	public long deposit(long amount) {
+	public long deposit(long amount) 
+	{
 		return balance += amount;
 	}
 	//출금 메소드
-	public long withdraw(long amount) {
+	public long withdraw(long amount) 
+	{
 		return balance -= amount;
 	}
 	//계좌정보 및 잔액출력 메소드
-	public long checkBalance() {
+	public long checkBalance() 
+	{
 		System.out.println(name + ": 계좌번호 " + number + ", 잔액 " + balance);
 		return balance;
 	}	
